@@ -12,7 +12,7 @@ interface AccordionGroupProps {
 
 export default function AccordionGroup({ items }: AccordionGroupProps) {
   return (
-    <div className="space-y-3">
+    <div className="border-t border-border">
       {items.map((item, index) => (
         <Accordion key={index} title={item.title} icon={item.icon}>
           {item.content}

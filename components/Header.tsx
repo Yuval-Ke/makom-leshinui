@@ -17,34 +17,33 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-cream/95 backdrop-blur-sm border-b border-subtle">
-      {/* Mobile header */}
-      <div className="md:hidden flex items-center h-16 px-4 relative">
+    <header className="sticky top-0 z-40 bg-bg/95 backdrop-blur-sm border-b border-border">
+      {/* Mobile */}
+      <div className="md:hidden flex items-center h-14 px-4 relative">
         <button
           onClick={() => setMenuOpen(true)}
-          className="p-2 text-forest hover:text-mint transition-colors"
+          className="p-2 -ml-2 text-muted-fg hover:text-fg transition-colors"
           aria-label="פתח תפריט"
           aria-expanded={menuOpen}
         >
-          <Menu size={24} />
+          <Menu size={22} />
         </button>
-
         <div className="absolute left-1/2 -translate-x-1/2">
           <Link href="/" aria-label="עמוד הבית">
-            <Logo size={64} />
+            <Logo size={56} />
           </Link>
         </div>
       </div>
 
-      {/* Desktop header */}
-      <div className="hidden md:flex items-center justify-between max-w-4xl mx-auto px-8 h-20">
+      {/* Desktop */}
+      <div className="hidden md:flex items-center justify-between max-w-3xl mx-auto px-8 h-16">
         <nav>
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-7">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-forest hover:text-mint transition-colors font-medium text-base"
+                  className="text-sm font-medium text-muted-fg hover:text-fg transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -52,9 +51,8 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-
         <Link href="/" aria-label="עמוד הבית">
-          <Logo size={72} />
+          <Logo size={60} />
         </Link>
       </div>
 

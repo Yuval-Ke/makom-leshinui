@@ -6,41 +6,31 @@ const WHATSAPP_NUM = "972526903605";
 
 export default function ContactBlock() {
   return (
-    <div className="space-y-5">
+    <div className="space-y-4">
       <a
         href={`tel:${PHONE.replace(/-/g, "")}`}
-        className="flex items-center gap-3 text-forest hover:text-mint transition-colors group"
+        className="flex items-center gap-3 text-muted-fg hover:text-fg transition-colors group"
       >
-        <span className="flex-shrink-0 w-9 h-9 rounded-full bg-sage/30 flex items-center justify-center group-hover:bg-mint/20 transition-colors">
-          <Phone size={17} />
-        </span>
-        <span className="text-lg font-medium" dir="ltr">
-          {PHONE}
-        </span>
+        <Phone size={16} className="flex-shrink-0 text-stone" />
+        <span className="text-[15px]" dir="ltr">{PHONE}</span>
       </a>
 
       <a
         href={`mailto:${EMAIL}`}
-        className="flex items-center gap-3 text-forest hover:text-mint transition-colors group"
+        className="flex items-center gap-3 text-muted-fg hover:text-fg transition-colors group"
       >
-        <span className="flex-shrink-0 w-9 h-9 rounded-full bg-sage/30 flex items-center justify-center group-hover:bg-mint/20 transition-colors">
-          <Mail size={17} />
-        </span>
-        <span className="text-base font-medium" dir="ltr">
-          {EMAIL}
-        </span>
+        <Mail size={16} className="flex-shrink-0 text-stone" />
+        <span className="text-[15px]" dir="ltr">{EMAIL}</span>
       </a>
 
       <a
         href={`https://wa.me/${WHATSAPP_NUM}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-3 text-forest hover:text-mint transition-colors group"
+        className="flex items-center gap-3 text-muted-fg hover:text-fg transition-colors group"
       >
-        <span className="flex-shrink-0 w-9 h-9 rounded-full bg-sage/30 flex items-center justify-center group-hover:bg-mint/20 transition-colors">
-          <MessageCircle size={17} />
-        </span>
-        <span className="text-base font-medium">שליחת הודעה בוואטסאפ</span>
+        <MessageCircle size={16} className="flex-shrink-0 text-stone" />
+        <span className="text-[15px]">שליחת הודעה בוואטסאפ</span>
       </a>
     </div>
   );

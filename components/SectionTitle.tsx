@@ -14,7 +14,7 @@ export default function SectionTitle({
   return (
     <Tag
       id={id}
-      className={`text-2xl md:text-3xl font-bold text-forest mb-6 ${className}`}
+      className={`text-2xl md:text-3xl font-bold tracking-tight text-fg mb-6 ${className}`}
     >
       {children}
     </Tag>
