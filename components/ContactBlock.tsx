@@ -12,7 +12,7 @@ export default function ContactBlock() {
         className="flex items-center gap-3 text-muted-fg hover:text-fg transition-colors group"
       >
         <Phone size={16} className="flex-shrink-0 text-stone" />
-        <span className="text-[15px]" dir="ltr">{PHONE}</span>
+        <span className="text-sm" dir="ltr">{PHONE}</span>
       </a>
 
       <a
@@ -20,7 +20,7 @@ export default function ContactBlock() {
         className="flex items-center gap-3 text-muted-fg hover:text-fg transition-colors group"
       >
         <Mail size={16} className="flex-shrink-0 text-stone" />
-        <span className="text-[15px]" dir="ltr">{EMAIL}</span>
+        <span className="text-sm" dir="ltr">{EMAIL}</span>
       </a>
 
       <a
@@ -30,7 +30,7 @@ export default function ContactBlock() {
         className="flex items-center gap-3 text-muted-fg hover:text-fg transition-colors group"
       >
         <MessageCircle size={16} className="flex-shrink-0 text-stone" />
-        <span className="text-[15px]">שליחת הודעה בוואטסאפ</span>
+        <span className="text-sm">שליחת הודעה בוואטסאפ</span>
       </a>
     </div>
   );

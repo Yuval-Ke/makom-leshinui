@@ -77,7 +77,7 @@ export default function HomePage() {
         <PageContainer>
           <FadeIn>
             <SectionTitle id="what-is">מהי היפנוזה?</SectionTitle>
-            <p className="text-muted-fg leading-relaxed text-[15px] md:text-base">
+            <p className="text-muted-fg leading-relaxed text-sm md:text-base">
               היפנוזה היא תהליך בו מהפנט מציע למטופל להכנס למצב טראנס: מצב תודעה שונה נעים ויצירתי. במצב זה ניתן למצוא פתרונות למגוון בעיות כמו- כאבים כרוניים, אלרגיות, הפרעות שינה, חרדות, מיגרנות, מעי רגיז, כאבי מחזור, מחלות עור, פיברומיאלגיה הפסקת עישון ועוד.
             </p>
           </FadeIn>
@@ -116,7 +116,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-fg mb-1.5">{item.title}</h3>
-                    <p className="text-muted-fg text-[15px] leading-relaxed">{item.body}</p>
+                    <p className="text-muted-fg text-sm leading-relaxed">{item.body}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -132,7 +132,7 @@ export default function HomePage() {
         <PageContainer>
           <FadeIn>
             <SectionTitle id="conditions">מצבים בהם ניתן לטפל בהיפנוזה</SectionTitle>
-            <p className="text-muted-fg text-[15px] leading-relaxed mb-8">
+            <p className="text-muted-fg text-sm leading-relaxed mb-8">
               רשימת דוגמאות חלקית של מצבים רפואיים ונפשיים בהם ניתן לטפל בהצלחה באמצעות היפנוזה. בסוגריים – מצויינים מאמרים מדעיים עליהם הסתמכתי (ניתן לעיין בהם ברשת). למעמיקים מומלץ לקרוא את הספר &quot;היפנוזה- דרכה של הנפש ליצור את הגוף&quot;, מאת אודי בונשטיין, או לקרוא באתר האגודה הישראלית להיפנוזה.
             </p>
           </FadeIn>

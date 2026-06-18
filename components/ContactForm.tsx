@@ -22,13 +22,13 @@ export default function ContactForm() {
     return (
       <div className="rounded-xl bg-muted border border-border p-8 text-center">
         <p className="font-semibold text-fg mb-1">תודה רבה!</p>
-        <p className="text-muted-fg text-[15px]">הודעתך התקבלה. נחזור אליך בהקדם.</p>
+        <p className="text-muted-fg text-sm">הודעתך התקבלה. נחזור אליך בהקדם.</p>
       </div>
     );
   }
 
   const fieldClass =
-    "w-full rounded-lg border border-border bg-bg px-4 py-2.5 text-[15px] text-fg placeholder-muted-fg focus:outline-none focus:ring-1 focus:ring-stone/50 focus:border-stone transition";
+    "w-full rounded-lg border border-border bg-bg px-4 py-2.5 text-sm text-fg placeholder-muted-fg focus:outline-none focus:ring-1 focus:ring-stone/50 focus:border-stone transition";
 
   return (
     <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }} noValidate className="space-y-4">

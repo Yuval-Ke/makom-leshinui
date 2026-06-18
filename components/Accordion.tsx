@@ -36,7 +36,7 @@ export default function Accordion({ title, children, icon }: AccordionProps) {
 
       <div className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
         <div className="overflow-hidden">
-          <div className="pb-5 text-muted-fg leading-relaxed text-[15px]">
+          <div className="pb-5 text-muted-fg leading-relaxed text-sm">
             {children}
           </div>
         </div>

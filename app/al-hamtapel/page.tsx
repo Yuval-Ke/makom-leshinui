@@ -29,7 +29,7 @@ export default function TherapistPage() {
               </div>
             </div>
 
-            <div className="space-y-4 text-muted-fg leading-relaxed text-[15px] flex-1">
+            <div className="space-y-4 text-muted-fg leading-relaxed text-sm flex-1">
               <p>
                 שמי יובל, אני רופא (MD) ועובד בבית חולים רמב&quot;ם. במקביל לעבודתי כרופא, בשנים האחרונות אני מטפל ומחלץ נפגעי נפש בסיטואציות משבריות בחו&quot;ל.
               </p>
