@@ -1,4 +1,4 @@
-import { UserCircle2 } from "lucide-react";
+import Image from "next/image";
 import PageContainer from "@/components/PageContainer";
 import SectionTitle from "@/components/SectionTitle";
 import FadeIn from "@/components/FadeIn";
@@ -18,11 +18,14 @@ export default function TherapistPage() {
         <FadeIn delay={80}>
           <div className="flex flex-col md:flex-row gap-10 md:gap-14 items-start">
             <div className="flex-shrink-0 flex justify-center w-full md:w-auto">
-              <div
-                className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-muted border border-border flex items-center justify-center"
-                aria-label="תמונת המטפל"
-              >
-                <UserCircle2 size={64} className="text-border" aria-hidden="true" />
+              <div className="w-44 h-44 md:w-52 md:h-52 rounded-2xl overflow-hidden border border-border">
+                <Image
+                  src="/Pictures/Therapist.jpg"
+                  alt="יובל — מטפל בהיפנוזה"
+                  width={208}
+                  height={208}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
